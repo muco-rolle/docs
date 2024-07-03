@@ -10,7 +10,7 @@
   },
   "servers": [
     {
-      "url": "http://sandbox.mintlify.com"
+      "url": "https://api.leapa.co/v2"
     }
   ],
   "security": [
@@ -19,7 +19,7 @@
     }
   ],
   "paths": {
-    "/test/v2/transfers/{transfer_id}": {
+    "/transfers/{transfer_id}": {
       "get": {
         "tags": ["get", "Transfers"],
         "summary": "Get a transfer.",
@@ -207,7 +207,7 @@
         }
       }
     },
-    "/test/v2/refunds/{refund_id}": {
+    "/refunds/{refund_id}": {
       "get": {
         "tags": ["Refunds", "get"],
         "summary": "Get the refund",
@@ -395,7 +395,7 @@
         }
       }
     },
-    "/test/v2/rates/{rate_id}": {
+    "/rates/{rate_id}": {
       "get": {
         "tags": ["Rates", "get"],
         "summary": "Get a Rates",
@@ -671,7 +671,7 @@
         }
       }
     },
-    "/test/v2/rates/{rate_id}/rates": {
+    "/rates/{rate_id}/rates": {
       "put": {
         "tags": ["Rates", "Rate", "put"],
         "summary": "Calculate a Amount upon applying a rate",
@@ -771,7 +771,7 @@
         }
       }
     },
-    "/test/v2/products/{product_id}": {
+    "/products/{product_id}": {
       "get": {
         "tags": ["Products", "get"],
         "summary": "Get a Product",
@@ -1235,7 +1235,7 @@
         }
       }
     },
-    "/test/v2/invoices/{invoice_id}": {
+    "/invoices/{invoice_id}": {
       "get": {
         "tags": ["get", "Invoices"],
         "summary": " Get an invoice",
@@ -1511,7 +1511,7 @@
         }
       }
     },
-    "/test/v2/invoices/{invoice_id}/void": {
+    "/invoices/{invoice_id}/void": {
       "put": {
         "tags": ["Invoices", "put"],
         "summary": " Void an invoice sent to the customer",
@@ -1601,7 +1601,7 @@
         }
       }
     },
-    "/test/v2/invoices/{invoice_id}/send": {
+    "/invoices/{invoice_id}/send": {
       "put": {
         "tags": ["Invoices", "put"],
         "summary": "Send an invoice to the customer",
@@ -1691,7 +1691,7 @@
         }
       }
     },
-    "/test/v2/invoices/{invoice_id}/pay/mobile": {
+    "/invoices/{invoice_id}/pay/mobile": {
       "put": {
         "tags": ["Invoices", "put"],
         "summary": " Process the payment of this invoice with New Mobile Money",
@@ -1791,7 +1791,7 @@
         }
       }
     },
-    "/test/v2/invoices/{invoice_id}/pay/card": {
+    "/invoices/{invoice_id}/pay/card": {
       "put": {
         "tags": ["Invoices", "put"],
         "summary": "Process the payment of this invoice with existing source",
@@ -1891,7 +1891,7 @@
         }
       }
     },
-    "/test/v2/customers/{customer_id}": {
+    "/customers/{customer_id}": {
       "get": {
         "tags": ["Customers", "get"],
         "summary": "Get a customer by Id",
@@ -2167,7 +2167,7 @@
         }
       }
     },
-    "/test/v2/customers/{customer_id}/sources/{account_id}": {
+    "/customers/{customer_id}/sources/{account_id}": {
       "put": {
         "tags": ["Customers_card", "Customers", "put"],
         "summary": "Update the customer source ",
@@ -2371,7 +2371,7 @@
         }
       }
     },
-    "/test/v2/customers/{customer_id}/destination/mobile/{account_id}": {
+    "/customers/{customer_id}/destination/mobile/{account_id}": {
       "put": {
         "tags": ["Customers_card", "Customers", "put"],
         "summary": "Update the customer Mobile destination ",
@@ -2479,7 +2479,7 @@
         }
       }
     },
-    "/test/v2/customers/{customer_id}/destination/bank/{account_id}": {
+    "/customers/{customer_id}/destination/bank/{account_id}": {
       "put": {
         "tags": ["Customers_card", "Customers", "put"],
         "summary": "Update the customer destination ",
@@ -2587,7 +2587,7 @@
         }
       }
     },
-    "/test/v2/customers/email/{email}/otp": {
+    "/customers/email/{email}/otp": {
       "get": {
         "tags": ["Customers", "get"],
         "summary": "Get OTP of a customer by email",
@@ -2775,7 +2775,7 @@
         }
       }
     },
-    "/test/v2/charges/{charge_id}": {
+    "/charges/{charge_id}": {
       "get": {
         "tags": ["get", "Charges"],
         "summary": "Get charge of a customer",
@@ -2963,7 +2963,7 @@
         }
       }
     },
-    "/test/v2/transfers": {
+    "/transfers": {
       "get": {
         "tags": ["get", "Transfers"],
         "summary": "Get all transfers.",
@@ -3141,7 +3141,7 @@
         }
       }
     },
-    "/test/v2/refunds": {
+    "/refunds": {
       "get": {
         "tags": ["Refunds", "get"],
         "summary": "Get the most recent refunds",
@@ -3319,7 +3319,7 @@
         }
       }
     },
-    "/test/v2/rates": {
+    "/rates": {
       "get": {
         "tags": ["Rates", "get"],
         "summary": "Get All Rates",
@@ -3497,7 +3497,7 @@
         }
       }
     },
-    "/test/v2/products": {
+    "/products": {
       "get": {
         "tags": ["Products", "get"],
         "summary": "Get All Product",
@@ -3675,7 +3675,7 @@
         }
       }
     },
-    "/test/v2/payouts": {
+    "/payouts": {
       "get": {
         "tags": ["Payout", "get", "Payouts"],
         "summary": "Get the most recent payouts list",
@@ -3853,7 +3853,7 @@
         }
       }
     },
-    "/test/v2/pages/charges/auth": {
+    "/pages/charges/auth": {
       "post": {
         "tags": ["Pages", "Invoice_Pages", "post"],
         "summary": " Charge Authorization from Invoice Page",
@@ -3943,7 +3943,7 @@
         }
       }
     },
-    "/test/v2/invoices": {
+    "/invoices": {
       "get": {
         "tags": ["get", "Invoices"],
         "summary": "Get all invoice issue by the Merchant (owner of the account)",
@@ -4121,7 +4121,7 @@
         }
       }
     },
-    "/test/v2/invoices/rates": {
+    "/invoices/rates": {
       "post": {
         "tags": ["post", "Invoices"],
         "summary": " Check invoice amount upon applying the rate",
@@ -4211,7 +4211,7 @@
         }
       }
     },
-    "/test/v2/emails/{email_type}": {
+    "/emails/{email_type}": {
       "post": {
         "tags": ["Emails"],
         "operationId": "sendEmail",
@@ -4312,7 +4312,7 @@
         }
       }
     },
-    "/test/v2/customers": {
+    "/customers": {
       "get": {
         "tags": ["Customers", "get", "Customers_all"],
         "summary": "Get All Customers for the merchant",
@@ -4490,7 +4490,7 @@
         }
       }
     },
-    "/test/v2/customers/{customer_id}/sources/mobile": {
+    "/customers/{customer_id}/sources/mobile": {
       "post": {
         "tags": ["post", "Customers", "Customers_mobile"],
         "summary": "Add a mobile money source to the customer account",
@@ -4590,7 +4590,7 @@
         }
       }
     },
-    "/test/v2/customers/{customer_id}/sources/card": {
+    "/customers/{customer_id}/sources/card": {
       "post": {
         "tags": ["Customers_card", "post", "Customers"],
         "summary": "Add a source card to the customer account",
@@ -4690,7 +4690,7 @@
         }
       }
     },
-    "/test/v2/customers/{customer_id}/destination/mobile": {
+    "/customers/{customer_id}/destination/mobile": {
       "post": {
         "tags": ["post", "Customers", "Customers_mobile_destination"],
         "summary": "Add a destination mobile account to the customer account",
@@ -4790,7 +4790,7 @@
         }
       }
     },
-    "/test/v2/customers/{customer_id}/destination/bank": {
+    "/customers/{customer_id}/destination/bank": {
       "post": {
         "tags": ["Customers_bank_destination", "post", "Customers"],
         "summary": "Add a destination bank account to the customer account",
@@ -4890,7 +4890,7 @@
         }
       }
     },
-    "/test/v2/charges/pages/auth": {
+    "/charges/pages/auth": {
       "post": {
         "tags": ["post", "Charges", "Charges_Pages"],
         "summary": "Charge Authorization from Invoice Page",
@@ -4980,7 +4980,7 @@
         }
       }
     },
-    "/test/v2/charges/otp/{number}": {
+    "/charges/otp/{number}": {
       "post": {
         "tags": ["OPT", "post", "Charges"],
         "summary": "Create new OTP",
@@ -5063,7 +5063,7 @@
         }
       }
     },
-    "/test/v2/charges/mobile": {
+    "/charges/mobile": {
       "post": {
         "tags": ["Charges_Mobile", "post", "Charges"],
         "summary": "Create charge for a customer via mobile",
@@ -5153,7 +5153,7 @@
         }
       }
     },
-    "/test/v2/charges/card": {
+    "/charges/card": {
       "post": {
         "tags": ["post", "Charges_Card", "Charges"],
         "summary": "Create charge for a customer via card",
@@ -5243,7 +5243,7 @@
         }
       }
     },
-    "/test/v2/charges/auth": {
+    "/charges/auth": {
       "post": {
         "tags": ["post", "Charges"],
         "summary": "Charge Authorization",
@@ -5333,7 +5333,7 @@
         }
       }
     },
-    "/test/v2/transaction_lines": {
+    "/transaction_lines": {
       "get": {
         "tags": ["get", "TransactionLines"],
         "summary": "Get the most recent Transaction lines list",
@@ -5423,7 +5423,7 @@
         }
       }
     },
-    "/test/v2/pages/invoices/{invoice_id}": {
+    "/pages/invoices/{invoice_id}": {
       "get": {
         "tags": ["Pages", "get", "INvoice_Pages"],
         "summary": "Get an invoice",
@@ -5513,7 +5513,7 @@
         }
       }
     },
-    "/test/v2/pages/invoices/{invoice_id}/pdf": {
+    "/pages/invoices/{invoice_id}/pdf": {
       "get": {
         "tags": ["Pages", "Invoice_Pages", "get"],
         "summary": " Print the Invoice PDF from Invoice Pages",
@@ -5607,7 +5607,7 @@
         }
       }
     },
-    "/test/v2/invoices/{invoice_id}/pdf": {
+    "/invoices/{invoice_id}/pdf": {
       "get": {
         "tags": ["get", "Invoices"],
         "summary": " Print the Invoice PDF",
@@ -5701,7 +5701,7 @@
         }
       }
     },
-    "/test/v2/invoices/reference/{reference_id}": {
+    "/invoices/reference/{reference_id}": {
       "get": {
         "tags": ["get", "Invoices"],
         "summary": "Get an invoice by reference id",
@@ -5791,7 +5791,7 @@
         }
       }
     },
-    "/test/v2/invoices/email/{email}": {
+    "/invoices/email/{email}": {
       "get": {
         "tags": ["InvoicesSearch", "get", "Invoices"],
         "summary": " Get all invoice issue by the Merchant (owner of the account)",
@@ -5889,7 +5889,7 @@
         }
       }
     },
-    "/test/v2/customers/{customer_id}/sources/{account_id}/mobile": {
+    "/customers/{customer_id}/sources/{account_id}/mobile": {
       "get": {
         "tags": ["Customers", "get"],
         "summary": "Get customer mobile information.",
@@ -5987,7 +5987,7 @@
         }
       }
     },
-    "/test/v2/customers/{customer_id}/sources/{account_id}/card": {
+    "/customers/{customer_id}/sources/{account_id}/card": {
       "get": {
         "tags": ["Customers", "get"],
         "summary": "Get customer  card information.",
@@ -6085,7 +6085,7 @@
         }
       }
     },
-    "/test/v2/customers/{customer_id}/destination/{account_id}/mobile": {
+    "/customers/{customer_id}/destination/{account_id}/mobile": {
       "get": {
         "tags": ["Customers", "get"],
         "summary": "Get customer mobile information.",
@@ -6183,7 +6183,7 @@
         }
       }
     },
-    "/test/v2/customers/{customer_id}/destination/{account_id}/bank": {
+    "/customers/{customer_id}/destination/{account_id}/bank": {
       "get": {
         "tags": ["Customers", "get"],
         "summary": "Get customer bank information.",
@@ -6281,7 +6281,7 @@
         }
       }
     },
-    "/test/v2/customers/reference/{reference_id}": {
+    "/customers/reference/{reference_id}": {
       "get": {
         "tags": ["Customers", "get"],
         "summary": "Get a customer by reference Id",
@@ -6371,7 +6371,7 @@
         }
       }
     },
-    "/test/v2/customers/email/{email}": {
+    "/customers/email/{email}": {
       "get": {
         "tags": ["Customers", "get"],
         "summary": "Get a customer by email",
@@ -6551,7 +6551,7 @@
         }
       }
     },
-    "/test/v2/analytics": {
+    "/analytics": {
       "get": {
         "tags": ["analytics_all", "get", "Dashboard"],
         "summary": "Analytics",
@@ -6641,7 +6641,7 @@
         }
       }
     },
-    "/test/v2/analytics/transaction/{transaction_id}": {
+    "/analytics/transaction/{transaction_id}": {
       "get": {
         "tags": ["Events", "get", "Dashboard"],
         "summary": "Get events by transaction ID",
@@ -6731,7 +6731,7 @@
         }
       }
     },
-    "/test/v2/analytics/account/{account_id}": {
+    "/analytics/account/{account_id}": {
       "get": {
         "tags": ["Events", "get", "Dashboard"],
         "summary": "Get Events by account ID",
@@ -6821,7 +6821,7 @@
         }
       }
     },
-    "/test/v2/customers/{customer_id}/destinations/{account_id}": {
+    "/customers/{customer_id}/destinations/{account_id}": {
       "delete": {
         "tags": ["Customers", "delete"],
         "summary": " Delete a customer destination account.",
