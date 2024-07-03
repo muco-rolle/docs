@@ -74,8 +74,16 @@
         {
           "group": "Charges",
           "pages": [
-            "api-reference/endpoint/get",
-            "api-reference/endpoint/create"
+            "api-reference/endpoint/charges/get",
+            "api-reference/endpoint/charges/create"
+          ]
+        },
+
+        {
+          "group": "Customers",
+          "pages": [
+            "api-reference/endpoint/customers/get",
+            "api-reference/endpoint/customers/create"
           ]
         }
       ]
