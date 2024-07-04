@@ -33,28 +33,39 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "X(Twitter)",
+      "icon": "twitter",
+      "url": "https://x.com/LeapaHQ"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
+      "name": "Demo",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://www.leapa.co/demo"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
+      "group": "Overview",
+      "pages": ["introduction"]
     },
     {
-      "group": "Essentials",
+      "group": "Web Application",
+      "pages": [
+        "web-application/create-your-account",
+        "web-application/explore-dashboard"
+      ]
+    },
+    {
+      "group": "Widgets",
+      "pages": ["widgets/introduction"]
+    },
+
+    {
+      "group": "Plugins",
+      "pages": ["plugins/woocommerce"]
+    },
+    {
+      "group": "Component Features Samples",
       "pages": [
         "essentials/markdown",
         "essentials/code",
